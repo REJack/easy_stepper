@@ -99,6 +99,10 @@ class BaseStep extends StatelessWidget {
           ? 10 + (showTitle ? radius * 2.5 + 25 : radius * 2)
           : (showTitle ? radius * 2.5 + 25 : radius * 2),
       child: InkWell(
+          focusColor: Colors.transparent,
+          highlightColor: Colors.transparent,
+          hoverColor: Colors.transparent,
+          splashColor: Colors.transparent,
           onTap: enabled ? onStepSelected : null,
           canRequestFocus: false,
           child: CustomMultiChildLayout(
